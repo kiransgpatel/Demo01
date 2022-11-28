@@ -111,13 +111,14 @@ section {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
-
 .slide2 {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(../img/3.jpg);
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   background-repeat: no-repeat;
 }
 .slide3 {
@@ -215,25 +216,19 @@ section {
 }
 
 .intro {
-  margin-bottom: 36px;
   text-align: center;
+  width: 30%;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0 auto;
 }
-
-.intro p {
-  max-width: 500px;
-}
-
-.intro h6 {
-  color: var(--brand);
-  font-weight: 400;
-  text-transform: uppercase;
-}
-
 .intro h1 {
   margin-top: 20px;
   margin-bottom: 15px;
 }
-
+.intro p{
+  font-style: italic;
+}
 .info-box {
   align-items: flex-start;
   display: flex;
@@ -265,7 +260,21 @@ section {
   font-size: 32px;
   padding: 35px;
 }
-
+.menu-content .icon{
+  float: left;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 10px;
+  padding: 15px;
+  border: 2px solid rgb(13 110 253 / 25%);
+}
+.menu-content .icon img{
+  width: 55%;
+}
 .service {
   padding: 32px;
   background-color: #bed6ed;
@@ -275,8 +284,12 @@ section {
   justify-content: center;
   align-items: center;
   border-radius: 8px;
+  transition: all 0.2s ease;
+  cursor: pointer;
 }
-
+.service:hover{
+  transform: scale(1.1);
+}
 .service h5 {
   margin-top: 24px;
   margin-bottom: 14px;
@@ -381,12 +394,6 @@ footer .social-icons a {
   font-size: 45px;
   border: 1px solid #1e3163;
 }
-
-.contact-phone {
-  border-left: 1px solid #ddd;
-  border-right: 1px solid #ddd;
-}
-
 .contact-info .bx {
   font-size: 60px;
   display: inline-block;
@@ -398,6 +405,9 @@ footer .social-icons a {
 .contact-phone,
 .contact-email {
   margin-bottom: 20px;
+    background: #f9fafb;
+    padding: 30px 10px;
+    border-radius: 10px;
 }
 
 .contact-info {
@@ -406,17 +416,18 @@ footer .social-icons a {
 }
 
 .contact-info h3 {
-  font-size: 18px;
-  margin-bottom: 15px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #999;
+  font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #7394b5;
 }
 
-.contact-info address,
+.contact-info address,.contact-info a,
 .contact-info p {
-  margin-bottom: 0;
-  color: #000;
+  margin-bottom: 10px;
+  color: #1e3163;
+  font-weight: 700;
 }
 
 .logo-name {
@@ -442,12 +453,18 @@ footer .social-icons a {
   text-decoration: none !important;
   font-weight: 600;
 }
-
+.card {
+  background-color: transparent!important;
+  border: 0!important;
+}
 .menu-item:hover .menu-link {
   color: rgb(189 213 236);
   font-weight: 900;
 }
-
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #293c6b!important;
+  background-color: rgb(13 110 253 / 25%);
+}
 .tab-content {
   background: #feffe4;
 }
@@ -455,15 +472,34 @@ footer .social-icons a {
 .menu-content {
   position: absolute;
   width: 100%;
-  background-color: #fff;
+  background-color: #feffe4;
   left: 0;
-  border-bottom: 5px solid #b9d0e8;
+  border-bottom: 3px solid #b9d0e8;
   box-shadow: 0 0px 2px 1px #e9ecef;
   animation: slideUp 0.3s ease;
   display: none;
   z-index: 3;
+  min-height: 270px;
+  height: auto;
 }
-
+.member-name{
+  position: absolute;
+    bottom: 0;
+    background: #b9d0e8;
+    width: 100%;
+    text-align: center;
+    font-size: 14px!important;
+    padding: 10px;
+    color: #1e3163;
+    font-weight: 900;
+}
+.contact-icon{
+  width:60px;
+  background: #feffe4;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
 .menu-content .menu-content-link {
   display: block;
   padding: 5px 15px;
@@ -491,4 +527,27 @@ footer .social-icons a {
     opacity: 1;
     transform: translateX(0px);
   }
+}
+.page-header{
+  position: relative;
+  display: block;
+  background-attachment: scroll;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px 0px 50px;
+  z-index: 1;
+  overflow: hidden;
+    background-image: url("../img/page-header-bg.jpg");
+    color:#FFF;
+}
+.page-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(var(--agriox-primary-rgb, 51, 75, 53), 0.7);
+  z-index: -1;
 }
