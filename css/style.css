@@ -28,9 +28,10 @@ h6,
 .display-4 {
   font-weight: 700;
   color: var(--dark);
-  font-family: 'Handlee', cursive;
 }
-
+.intro h1{
+font-family: 'Handlee', cursive;
+}
 .bg-cover {
   background-size: cover;
   background-position: center;
