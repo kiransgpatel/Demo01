@@ -28,10 +28,9 @@ h6,
 .display-4 {
   font-weight: 700;
   color: var(--dark);
+  font-family: 'Handlee', cursive;
 }
-.intro h1{
-font-family: 'Handlee', cursive;
-}
+
 .bg-cover {
   background-size: cover;
   background-position: center;
@@ -219,7 +218,7 @@ section {
 
 .intro {
   text-align: center;
-  width: 40%;
+  width: 60%;
   padding: 10px;
   border-radius: 10px;
   margin: 0 auto;
@@ -359,12 +358,6 @@ footer .social-icons a {
     padding: 30px 10px;
     border-radius: 10px;
 }
-
-.contact-info {
-  margin-top: 20px;
-  text-align: center;
-}
-
 .contact-info h3 {
   font-size: 20px;
     margin-bottom: 15px;
@@ -478,29 +471,6 @@ footer .social-icons a {
     transform: translateX(0px);
   }
 }
-.page-header{
-  position: relative;
-  display: block;
-  background-attachment: scroll;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 40px 0px 50px;
-  z-index: 1;
-  overflow: hidden;
-    background-image: url("../img/page-header-bg.jpg");
-    color:#FFF;
-}
-.page-header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background: rgba(var(--agriox-primary-rgb, 51, 75, 53), 0.7);
-  z-index: -1;
-}
 .team-one__single {
   position: relative;
   display: block;
@@ -553,3 +523,65 @@ footer .social-icons a {
 .team-one__single:hover .team-one__img-box {
   box-shadow: 0px 10px 90px 0px rgb(0 0 0 / 15%);
 }
+.contact-one_information-box .information-box {
+  background-color: #ffffff8a;
+  border-radius: 12px;
+  padding: 40px 50px 25px;
+}
+.contact-head{
+  text-align: center;
+  background: #FFF;
+  padding: 10px;
+  border-radius: 10px;
+}
+.information-item_one {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.information-item_one .icon {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50px;
+  flex: 0 0 50px;
+  max-width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #c4dee9;
+  color: #2c2c2c;
+  margin-right: 15px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.information-item_one .icon img{
+  width: 35px;
+}
+.information-item_one .info {
+  line-height: 1;
+}
+.information-item_one .info .fs-18,.information-item_one .info .fs-18 a {
+  font-size: 18px;
+    color: #000;
+    font-weight: 700;
+}
+.information-item_one .info .sub-title {
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+}
+.mb-25 {
+  margin-bottom: 25px;
+}
+.contact-one_information-box .information-box h3 {
+  margin-bottom: 10px;
+}
+.contact-new{
+  background-image: url(../img/services-one-shape-1.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  z-index: -1;
+  padding: 100px 0;
+}
+
+
