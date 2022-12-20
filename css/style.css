@@ -305,7 +305,7 @@ footer {
 }
 
 footer .footer-top {
-  padding-top: 40px;
+  padding-top: 20px;
   padding-bottom: 20px;
 }
 
@@ -598,4 +598,40 @@ footer .social-icons a {
 #product h6 {
   font-family: inherit;
 }
+.menu-icon{
+  height:40px;
+  width:40px;
+}
+.menusub{
+  position: relative;
+}
+.menu-detail{
+  position: absolute;
+  left: 20%;
+  top:0;
+}
 
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  left: 15%;
+  top: 0;
+  height: 100%;
+  background: transparent;
+  border: none;
+  width: 80%;
+}
+.dropdown-menu a {
+  color: #1e3163;
+  font-weight: 900;
+  padding: 4px 10px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
