@@ -50,4 +50,9 @@ $(document).ready(function () {
         e.preventDefault()
         $(this).tab('show')
     });
+    
+    $('#prodCat[data-bs-toggle="tab-hover"] > a').hover(function (e) {
+        e.preventDefault()
+        $(this).tab('show')
+    });
 });
