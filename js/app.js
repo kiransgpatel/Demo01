@@ -1,6 +1,6 @@
 
 
-$(document).ready(function () {
+jQuery(document).ready(function ($) {
     //Owl
     $('.hero-slider').owlCarousel({
         loop: true,
@@ -41,18 +41,30 @@ $(document).ready(function () {
         }
     })
 
-    $('#aboutTab[data-bs-toggle="tab-hover"] > a').hover(function (e) {
-        e.preventDefault()
-        $(this).tab('show')
+    // Product menu hover
+    $('#productTab[data-mouse="hover"] a').hover(function(){
+        $(this).tab('show');
     });
+    $('a[data-bs-toggle="pill"]').on('shown.bs.tab', function (e) {
+    var target = $(e.relatedTarget).attr('href');
+    $(target).removeClass('active');
+    })
 
-    $('#productTab[data-bs-toggle="tab-hover"] > a').hover(function (e) {
-        e.preventDefault()
-        $(this).tab('show')
+    $('#prodCat[data-mouse="hover"] a').hover(function(){
+        $(this).tab('show');
     });
-    
-    $('#prodCat[data-bs-toggle="tab-hover"] > a').hover(function (e) {
-        e.preventDefault()
-        $(this).tab('show')
+    $('a[data-bs-toggle="pill"]').on('shown.bs.tab', function (e) {
+    var target = $(e.relatedTarget).attr('href');
+    $(target).removeClass('active');
+    })
+
+    // About menu hover
+    $('#aboutTab[data-mouse="hover"] a').hover(function(){
+    $(this).tab('show');
     });
+    $('a[data-bs-toggle="pill"]').on('shown.bs.tab', function (e) {
+    var target = $(e.relatedTarget).attr('href');
+    $(target).removeClass('active');
+    })
+
 });
