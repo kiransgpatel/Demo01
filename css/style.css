@@ -635,3 +635,8 @@ footer .social-icons a {
 .dropdown-submenu:hover>.dropdown-menu {
   display: block;
 }
+.dropdown-submenu .active {
+  background-color: #bdd5ec;
+  width: 150px;
+  border-radius: 8px;
+}
