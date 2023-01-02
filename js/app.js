@@ -57,6 +57,13 @@ jQuery(document).ready(function ($) {
     var target = $(e.relatedTarget).attr('href');
     $(target).removeClass('active');
     })
+    
+    // add activeclass
+
+    $("a.nav-link").click(function () {
+        $("a.nav-link").removeClass("active");
+        $(this).addClass("active");   
+    });
 
     // About menu hover
     $('#aboutTab[data-mouse="hover"] a').hover(function(){
