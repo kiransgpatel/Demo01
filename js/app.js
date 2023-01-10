@@ -5,7 +5,7 @@ jQuery(document).ready(function ($) {
         margin: 0,
         items: 1,
         dots: false,
-        navText: ['<', '>'],
+        navText: ['', ''],
         smartSpeed: 1000,
         autoplay: true,
         autoplayTimeout: 7000,
