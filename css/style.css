@@ -11,6 +11,14 @@
 .bxl-whatsapp{
     font-size: 20px;
 }
+.owl-prev{
+ background: url(../img/chevron-left-regular-24.png) no-repeat center;
+ background-size: contain;
+}
+.owl-next{
+ background: url(../img/chevron-right-regular-24.png) no-repeat center;
+ background-size: contain;
+}
 body {
   font-family: "Mulish", sans-serif;
   color: var(--body);
@@ -589,14 +597,6 @@ footer .social-icons a {
   background-size: cover;
   z-index: -1;
   padding: 100px 0;
-}
-.owl-prev{
- background: url(../img/chevron-left-regular-24.png) no-repeat center;
- background-size: contain;
-}
-.owl-next{
- background: url(../img/chevron-right-regular-24.png) no-repeat center;
- background-size: contain;
 }
 .menu-head {
   font-size: 18px;
