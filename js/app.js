@@ -7,7 +7,7 @@ jQuery(document).ready(function ($) {
         margin: 0,
         items: 1,
         dots: false,
-        navText: ['<i class="bi bi-chevron-left"></i>', '<i class="bi bi-chevron-right"></i>'],
+        navText: ['<i class='bx bx-chevron-left'></i>', '<i class='bx bx-chevron-right'></i>'],
         smartSpeed: 1000,
         autoplay: true,
         autoplayTimeout: 7000,
