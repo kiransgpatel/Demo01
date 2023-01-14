@@ -12,12 +12,12 @@
     font-size: 20px;
 }
 .owl-prev{
- background: url(../img/chevron-left-regular-24.png) no-repeat center;
- background-size: contain;
+ background: url(../img/chevron-left-regular-24.png) no-repeat center!important;
+ background-size: 60%!important;
 }
 .owl-next{
- background: url(../img/chevron-right-regular-24.png) no-repeat center;
- background-size: contain;
+ background: url(../img/chevron-right-regular-24.png) no-repeat center!important;
+ background-size: 60%!important;
 }
 body {
   font-family: "Mulish", sans-serif;
@@ -71,7 +71,7 @@ section {
 
 .hero-slider .owl-prev,
 .hero-slider .owl-next {
-  background-color: rgba(255, 255, 255, 0.3) !important;
+  background-color: #f9fafb!important;
   width: 60px !important;
   height: 60px !important;
   display: block;
